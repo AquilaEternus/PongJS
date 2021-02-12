@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PongJS</title>
+</head>
+<body>
+    <div class="tv-container">
+        <div class="tv-panel">
+            <div class="tv-label">
+                <h1>PongJS</h1>
+            </div>
+            <div class="tv-buttons">
+                <button id="startBtn">
+                    Start
+                </button>
+                <button id="resetBtn">
+                    Reset
+                </button>
+                <button id="rulesBtn" data-toggle="modal" data-target="rules-modal">
+                    Rules
+                </button>
+            </div>
+        </div>
+        <div class="screen-container">
+            <canvas  id="canvas" width="800" height="500"></canvas>
+        </div>
+    </div>
+    <div id="rules-modal" class="modal">
+        <button id="close-rules" class="btn">
+            x
+        </button>
+        <div class="modal-content">
+            <h3>Rules</h3>
+            <form class="modal-form">
+                <label for="ptsToWin">Points To Win: </label>
+                <select name="ptsToWin" id="ptsToWin">
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                  </select>
+            </form>
+            <p>P1 Controls:</p>
+            <ul>
+                <li>Move up: w</li>
+                <li>Move down: s</li>
+            </ul>
+            <p>P2 Controls: </p>
+            <ul>
+                <li>Move up: ↑</li>
+                <li>Move down: ↓</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
