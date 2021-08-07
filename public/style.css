@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	font-family: "Lobster", cursive;
+	background-color: #333;
+	background-image: url("./assets/light-wood-BK1.png");
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+h1 {
+	color: white;
+}
+
+h5 {
+	color: white;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	outline: none;
+	transform: scale(0.9);
+}
+
+canvas {
+	background-color: #333;
+	border: 1px solid black;
+	border-radius: 2px;
+	width: 100%;
+}
+
+.tv-container {
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	min-width: 100vw;
+}
+
+.tv-panel {
+	flex-basis: 25%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background-image: url("./assets/Wood-Pattern-1.jpg");
+	margin: 0 2% 0 2%;
+	border: 5px solid black;
+	border-radius: 5px;
+}
+
+.tv-label {
+	text-align: center;
+	padding: 20px;
+	font-size-adjust: initial;
+}
+
+.tv-buttons {
+	display: flex;
+	padding: 20px;
+	justify-content: space-around;
+}
+
+.tv-buttons button {
+	font-family: "Lobster", cursive;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+}
+
+.screen-container {
+	flex-basis: 70%;
+	display: flex;
+	margin-right: 2%;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 20px;
+	border-radius: 10px;
+}
+
+.modal {
+	/* width: 45vw;
+  height: 40vh; */
+	width: 30%;
+	height: 50%;
+	border: 1px solid black;
+	border-radius: 1em;
+	background-color: white;
+	position: absolute;
+	z-index: 1;
+	display: none;
+	padding: 1em;
+	overflow: auto;
+}
+
+.modal.show-modal {
+	display: block;
+}
+
+.modal-content {
+	font-family: "Lucida Sans", "Lucida Sans Regular", Verdana, sans-serif;
+	font-size: medium;
+}
+
+.modal .btn {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 0.5em;
+}
+
+.modal .btn:focus {
+	background-color: black;
+	color: white;
+}
+
+.trophy-img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+.winning-text {
+	text-align: center;
+	font-size: xx-large;
+	margin: 0 auto 0 auto;
+}
+
+@media only screen and (min-width: 1000px) {
+	.tv-label {
+		padding: 20px;
+		font-size: 1em;
+	}
+
+	.tv-panel {
+		padding: 20px;
+	}
+
+	.screen-container {
+		height: 700px;
+	}
+
+	.tv-buttons button {
+		font-size: small;
+		width: 50px;
+		height: 50px;
+	}
+
+	.modal {
+		width: 45vw;
+	}
+
+	.trophy-img {
+		max-width: 40%;
+	}
+}
+
+@media only screen and (min-width: 1900px) {
+	.tv-label {
+		padding: 30px;
+		font-size: 1.3em;
+	}
+
+	.screen-container {
+		height: 1000px;
+	}
+
+	.tv-buttons button {
+		font-size: large;
+		width: 80px;
+		height: 80px;
+	}
+
+	.modal-content {
+		font-size: xx-large;
+		padding: 40px;
+	}
+
+	.modal-content option {
+		font-size: 0.7em;
+	}
+
+	.trophy-img {
+		max-width: 50%;
+	}
+}
+
+@media only screen and (min-width: 2500px) {
+	.tv-panel {
+		padding: 40px;
+	}
+
+	.tv-label {
+		padding: 20px;
+	}
+
+	.screen-container {
+		height: 1400px;
+	}
+
+	.tv-buttons button {
+		font-size: 28px;
+	}
+
+	.btn {
+		font-size: xx-large;
+	}
+
+	.modal {
+		width: 40vw;
+	}
+
+	.modal-content {
+		font-size: xx-large;
+		padding: 40px;
+	}
+
+	.trophy-img {
+		max-width: 70%;
+	}
+}
+
+@media only screen and (min-width: 3800px) {
+	.tv-panel {
+		padding: 80px;
+	}
+
+	.tv-label {
+		font-size: 1.9em;
+	}
+
+	.screen-container {
+		height: 2100px;
+	}
+
+	.tv-buttons button {
+		width: 100px;
+		height: 100px;
+	}
+
+	.modal-content {
+		font-size: 2.6em;
+		padding: 80px;
+	}
+
+	.trophy-img {
+		max-width: 110%;
+	}
+}

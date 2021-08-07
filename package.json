@@ -1,0 +1,35 @@
+{
+  "name": "pongjs",
+  "version": "1.0.0",
+  "description": "Pong clone in vanilla JavaScript with score keeping, and a 'Start' and 'Reset' button.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node app.js",
+    "dev": "nodemon --exec babel-node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AquilaEternus/PongJS.git"
+  },
+  "author": "Jose Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AquilaEternus/PongJS/issues"
+  },
+  "homepage": "https://github.com/AquilaEternus/PongJS#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "engine": {
+    "node": "15.5.1"
+  }
+}

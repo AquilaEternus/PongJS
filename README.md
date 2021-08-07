@@ -2,6 +2,8 @@
 
 PongJS is a pong clone written in vanilla Javascript.
 
-### How to run:
+Demo: [https://pongjs-ae.herokuapp.com/](https://pongjs-ae.herokuapp.com/)
 
-- Open the `index.html` file in a browser to view the game.
+### How to run locally:
+
+Install node dependencies and run `npm run dev` to start up local development server on port 3000.
